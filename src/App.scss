@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.Home{
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align:start;
+}
+.Home2{
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:rgba(245,245,245,255);
+  display: flex;
+  justify-content: center;
+  scroll-snap-align:start;
+  background:radial-gradient(#050526 0%,black 90%) -20vw 10vh no-repeat black;
+}
+.Specs{
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align:start;
+}
+.logo{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  color: #d0d3df;
+}
+.wat{
+  display: block;
+  position:fixed;
+  animation: sheesh 0.1s;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -0.1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  transform:rotate(315deg)scale(0.6)translate(50vw,0vh);
+}
+.log{
+  display: block;
+  position:fixed;
+  width: 30%;
+  animation: sheesh 0.1s;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -0.1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  /* background-color: aqua; */
+}
+.logoo{
+  display: block;
+  position:absolute;
+  text-align: center;
+  margin-top: 50vh;
+	h1 {
+		color: #fff;
+		font-size: 64px;
+		font-weight: 700;
+		font-family: "Josefin Sans", sans-serif;
+		background: linear-gradient(to right,#49416d,#4658a0 30%,#7e7f88 60%,#d0d3df 90%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 3s linear infinite;
+		display: inline-block;
+	}
+  // animation: sheesh 0.1s;
+  // animation-play-state: paused;
+  // animation-delay: calc(var(--scroll) * -0.1s);
+  // animation-iteration-count: 1;
+  // animation-fill-mode: both;
+
+}
+// .logo h1{
+//   font-size: 60px;
+//   /* background-color:aqua ; */
+//   margin-top: 60vh;
+  
+// }
+@keyframes sheesh {
+  to {
+    width:10%;
+    /* transform: translate(-800px,-850px); */
+    transform: translateY(-850px);
+    opacity: -6;
+  }
+}
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+.container {
+  display: flex;
+  top:64px;
+  height: calc(100vh - 64px);
+  justify-content: center;
+  align-items: center;
+  animation: expand .8s ease forwards;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+.watch5{
+  transform: scale(0.8);
+  z-index: 1;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+  gap:1vw;
+}
+.tx ul{
+  list-style: none;
+}
+
+.text h1{
+  display: flex;
+  /* background-color: aqua; */
+  color: #111; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 64px; 
+  text-transform: uppercase;
+}
+.text h2{
+  display: flex;
+  /* background-color: red; */
+  color: #111; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 64px; 
+
+}
+.container_content {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_content_inner {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.title h1 {
+  font-size: 80px;
+  color:black;
+}
+.topbar{
+  width: 100vw;
+}
+.watch3{
+  width: 98.99vw;
+}
+.centered{
+  position:absolute;
+  left:50vw;
+  top:50vh;
+  transform:translateX(-50%) translateY(-50%) rotateX(15deg);
+  text-align:center;
+  margin-left: 50px;
+  
+}
+
+.cyberspace{
+  position:relative;
+  font-family:'cyberspace_racewayback',sans-serif;
+  font-size:6rem;
+  color:black;
+  -webkit-clip:background;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:#49416d;
+  -webkit-text-stroke-width: 0.1rem;
+   -webkit-text-stroke-color: rgba(135,209,228,1); 
+  filter:url(#extrude);
+  
+}
+
+$stars: 350;         // Number of start per layer
+$depth: 300;         // Depth between star layers
+$speed: 10s;          // Number of seconds to transition between layers
+$width: 3000;        // Width of the starfield
+$height: 960;        // Height of the starfield
+
+.stars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  $box-shadow: ();
+  @for $i from 0 through $stars {
+    $box-shadow: $box-shadow, (random($width)-$width/2 + px) (random($height)-$height/2 + px) hsl(90,0,75+random(25));
+  }
+  box-shadow: $box-shadow;
+  animation: fly $speed linear infinite;
+  transform-style: preserve-3d;
+  
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    box-shadow: inherit;
+  }
+  &:before {
+    transform: translateZ(-$depth + px);
+    animation: fade1 $speed linear infinite;
+  }
+  &:after {
+    transform: translateZ(-$depth * 2 + px);
+    animation: fade2 $speed linear infinite;
+  }
+}
+
+@keyframes fly {
+  from {
+    transform: translateZ(0px);
+  }
+  to {
+    transform: translateZ($depth + px);
+  }
+}
+
+@keyframes fade1 {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }  
+}
+@keyframes fade2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .5;
+  }  
+}
+@font-face {
+  font-family: 'cyberspace_racewayback';
+  src: url('cyberspace_raceway_back-webfont.woff2') format('woff2'),
+       url('cyberspace_raceway_back-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+.Home3{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align:start;
+  background: radial-gradient(rgba(#7600bf, 0.5) 0%, transparent 70%), linear-gradient(#0b161e 40%, #202076 70%);
+  perspective: 700px;
+  font-size: clamp(10px, 2vw, 20px);
+  overflow: hidden;
+}
+.lines {
+  $color: #59c1fe;
+  position: fixed;
+  width: 100vw;
+  height: 4em;
+  background: linear-gradient(rgba($color, 0.2) 20%, $color 40%, $color 60%, rgba($color, 0.2) 80%);
+  background-size: 1px 0.5em;
+  box-shadow: 0 0 1em rgba($color, 0.4);
+  transform: translateY(-1em);
+  left: 0;
+}
+
+h1 {
+  position: relative;
+  font-family: 'Exo';
+  font-size: 9em;
+  margin: 0;
+  transform: skew(-15deg);
+  letter-spacing: 0.03em;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: -0.1em;
+    right: 0.05em;
+    width: 0.4em;
+    height: 0.4em;
+    background: 
+      radial-gradient(white 3%, rgba(white, 0.3) 15%, rgba(white, 0.05) 60%, transparent 80%),
+      radial-gradient(rgba(white, 0.2) 50%, transparent 60%) 50% 50% / 5% 100%,
+      radial-gradient(rgba(white, 0.2) 50%, transparent 60%) 50% 50% / 70% 5%;
+    background-repeat: no-repeat;
+  }
+  
+  span:first-child {
+    display: block;
+    text-shadow: 0 0 0.1em #8ba2d0, 0 0 0.2em black,  0 0 5em #165ff3;
+    -webkit-text-stroke: 0.06em rgba(black, 0.5);
+  }
+  
+  span:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(#032d50 25%, #00a1ef 35%, white 50%, #20125f 50%, #8313e7 55%, #ff61af 75%);
+    -webkit-text-stroke: 0.01em #94a0b9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+h2 {
+  font-family: 'Mr Dafoe';
+  margin: 0;
+  font-size: 5.5em;
+  margin-top: -0.6em;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+  transform: rotate(-7deg);
+}
+
+.grid {
+  $main: #7d41e6;
+  $glow: rgba(#2e26ff, 0.4);
+  background: 
+    linear-gradient(transparent 65%, $glow 75%, $main 80%, $glow 85%, transparent 95%),
+    linear-gradient(90deg, transparent 65%, $glow 75%, $main 80%, $glow 85%, transparent 95%);
+  background-size: 30px 30px;
+  width: 200vw;
+  height: 300vh;
+  position: absolute;
+  bottom: -120vh;
+  transform: rotateX(-100deg);
+  -webkit-mask-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0) 80%);
+}

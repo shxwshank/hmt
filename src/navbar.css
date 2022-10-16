@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    top:0px;
+    height: 64px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+    z-index: 2;
+    
+}
+.nav-center{
+    display: flex;  
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-center a{
+    color: white;
+    text-decoration: none;
+}
+.nav-center a:hover{
+    color: #49416d;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+.image1{
+    /* padding-top: 1rem; */
+    height: 64px;
+}
+.sticky{
+    position:sticky;
+    top:0;
+}
