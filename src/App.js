@@ -86,15 +86,6 @@ function App() {
               </filter>
               </defs>
             </svg>
-            <div className='tx'>
-              <ul>
-                <li>Stainless Steel</li>
-                <li>Water Resistant</li>
-                <li>Quartz Movement</li>
-                <li>1 Year Warranty</li>
-              </ul>
-            </div>
-            
           </div>
         </div>   
       </section> 
