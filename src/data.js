@@ -8,10 +8,5 @@ export const links = [
         id:2,
         text:'Specs',
         url:'#Specs'
-    },
-    {
-        id:5,
-        text:'Where to buy',
-        url:'#Home3'
     }
 ]

@@ -15,7 +15,7 @@ function App() {
         <div className='logo'>
           <img src={logo} className='log' alt='smooth-scroll'/>
           <div className='logoo'>
-            <h1>As times change, <br/>change the way you look at time</h1>
+            <h1>As times change, <br/>change time</h1>
           </div>
         </div>
       <div>
@@ -95,15 +95,6 @@ function App() {
               <img src = {watch3} className='watch3' alt='smooth-scroll'/>
             </div>
           </div>
-      </section>
-      <section className='Home3' id='Home3'>
-      <div class="grid"></div>
-        <div class="lines"></div>
-        <h1>
-          <span>AVAILABLE ON</span>
-          <span>AVAILABLE ON</span>
-        </h1>
-        <h2>Amazon and Flipkart</h2>
       </section>
     </main>
   );
